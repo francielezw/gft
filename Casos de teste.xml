@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWL</projectKey>
+    <exportDate>2022-12-06 20:47:05 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="76374539" key="SWL-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-03 17:27:46 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Deve conter um ícone de carrinho na parte superior ao lado direito do site]]></name>
+            <objective><![CDATA[Constar &iacute;cone carrinho de compras <br /><br />]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <precondition><![CDATA[Parte superior ao lado direito da tela&nbsp;]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Ao adicionar produto, no lado direito superior da tela dever&aacute; constar o item carrinho de compras&nbsp;]]></description>
+                        <expectedResult><![CDATA[Item carrinho de compras aparece com sucesso]]></expectedResult>
+                        <testData><![CDATA[&iacute;cone carrinho de compras&nbsp;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76380176" key="SWL-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-03 18:09:04 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Deve haver uma página com o título “ carrinho de compras “ com as opções na parte de baixo “ carrinho” e “ salvos”]]></name>
+            <objective><![CDATA[Salvar produto adicionado no carrinho]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters>
+                <parameter index="0">
+                    <defaultValue><![CDATA[172.17.25.54]]></defaultValue>
+                    <name><![CDATA[Servidor QA]]></name>
+                </parameter>
+            </parameters>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que inclua um produto no carrinho de compras
+
+When eu abrir a página do carrinho
+
+Then deverá aparecer o produto  ou produtos que foram incluídos.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76380177" key="SWL-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-03 18:09:23 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Ao adicionar um item no carrinho deve aparecer uma página informando que o item foi adicionado ao carrinho de compras]]></name>
+            <objective><![CDATA[Informar quando o item for adicionado no carrinho de compras&nbsp;]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given eu adicione um produto no carrinho de compras
+
+When eu  clico no carrinho
+
+Then o item escolhido irá ser visualizado com sucesso]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76380178" key="SWL-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-03 18:09:43 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Ao inserirmos um item no carrinho, o ícone de carrinho deve aparecer com o número 1 ou a quantidade de produtos inseridos no carrinho.]]></name>
+            <objective><![CDATA[Dever&aacute; contar quantidade de itens adicionados no carrinho de compras&nbsp;]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Quando clicar na op&ccedil;&atilde;o adicionar produto, no canto superior direito da tela onde se encontra o item carrinho, dever&aacute; aparecer a quantidade de produtos adicionados no carrinho de compras&nbsp;]]></description>
+                        <expectedResult><![CDATA[Quantidade de produtos inseridos com sucesso&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76380179" key="SWL-T6" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-03 18:10:00 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Deve conter ao lado de cada item no carrinho a opção “ Excluir” caso o cliente desista da compra.]]></name>
+            <objective><![CDATA[Op&ccedil;&atilde;o excluir produtos do carrinho&nbsp;]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters>
+                <parameter index="0">
+                    <defaultValue><![CDATA[172.17.25.54]]></defaultValue>
+                    <name><![CDATA[Servidor QA]]></name>
+                </parameter>
+            </parameters>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Quando clicar no item carrinho e desejar excluir algum produto, ir&aacute; aparecer a op&ccedil;&atilde;o no lado direito do produto com a op&ccedil;&atilde;o &quot; remover&quot;]]></description>
+                        <expectedResult><![CDATA[Exclu&iacute;do produto com sucesso <br /><br />]]></expectedResult>
+                        <testData><![CDATA[<var>Servidor QA</var>&nbsp;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76426036" key="SWL-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Franciele Zwirtes</createdBy>
+            <createdOn>2022-12-05 18:11:43 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Na página de compras de qualquer produto deve haver a opção “ adicionar ao carrinho”]]></name>
+            <objective><![CDATA[Adicionar produto no carrinho]]></objective>
+            <owner>63863d943e79f12e572369cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Ao selecionar produto e adicionar no carrinho, dever&aacute; ter um bot&atilde;o ao lado do produto &quot; adicionar no carrinho&quot;&nbsp;]]></description>
+                        <expectedResult><![CDATA[Produto x inserido com sucesso]]></expectedResult>
+                        <testData><![CDATA[Produto com c&oacute;digo x ]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
